@@ -14,6 +14,7 @@ public class Main {
         return arr;
     }
 
+    // b. Hitung penjumlahan
     public static int hitungPenjumlahan(int[] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -21,7 +22,7 @@ public class Main {
         }
         return sum;
     }
-
+  
     // c. Hitung rerata
     public static double hitungRerata(int[] arr) {
         int sum = hitungPenjumlahan(arr);
