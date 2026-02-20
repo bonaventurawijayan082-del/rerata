@@ -38,9 +38,9 @@ public class Main {
         System.out.println();
 
         int sum = hitungPenjumlahan(arr);
-        System.out.println("Penjumlahan: " + sum);
+        System.out.println("Penjumlahan : " + sum);
 
         double average = hitungRerata(arr);
-        System.out.println("Rerata: " + average);
+        System.out.println("Rerata : " + average);
     }
 }
