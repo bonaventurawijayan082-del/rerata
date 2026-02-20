@@ -22,6 +22,12 @@ public class Main {
         }
         return sum;
     }
+  
+    // c. Hitung rerata
+    public static double hitungRerata(int[] arr) {
+        int sum = hitungPenjumlahan(arr);
+        return (double) sum / arr.length;
+    }
 
     public static void main(String[] args) {
         int[] arr = deklarasiArray();
@@ -33,6 +39,9 @@ public class Main {
         System.out.println();
 
         int sum = hitungPenjumlahan(arr);
-        System.out.println("Penjumlahan: " + sum);
+        System.out.println("Penjumlahan : " + sum);
+
+        double average = hitungRerata(arr);
+        System.out.println("Rerata : " + average);
     }
 }
