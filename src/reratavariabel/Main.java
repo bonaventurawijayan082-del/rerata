@@ -1,5 +1,4 @@
 public class Main {
-    // a. Deklarasi array
     public static int[] deklarasiArray() {
         int[] arr = new int[10];
         arr[0] = 1;
@@ -14,12 +13,26 @@ public class Main {
         arr[9] = 10;
         return arr;
     }
-        public static void main(String[] args) {
-            int[] arr = deklarasiArray();
-            System.out.println("Array: ");
+
+    // b. Hitung penjumlahan
+    public static int hitungPenjumlahan(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = deklarasiArray();
+
+        System.out.println("Array: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
+
+        int sum = hitungPenjumlahan(arr);
+        System.out.println("Penjumlahan: " + sum);
     }
 }
